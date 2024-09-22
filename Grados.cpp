@@ -15,10 +15,6 @@ int main() {
         cout << "¿Elige una opción: " << endl;
         cin >> opc;
         
-        if (opc > 3) {
-            cout << "Elige una opción entre 1 y 3" << endl;
-        }
-        
         switch (opc) {
             case 1: 
                 cout << "Introduzca los grados Celsius: " << endl;
@@ -34,6 +30,9 @@ int main() {
             break;
             case 3:
                 cout << "Saliendo..." << endl;
+            break;
+            default:
+                cout << "Elige una opción entre 1 y 3" << endl;
             break;
         }
     } while (opc != 3);
